@@ -14,7 +14,7 @@ public class HelloController {
 
     @GetMapping("/hello")
     public String hello(Model model) {
-        model.addAttribute("name", "Spring Boot with Thymeleaf");
+        model.addAttribute("message", "Spring Boot with Thymeleaf");
         return "hello"; // refers to hello.html in templates folder
     }
 }
